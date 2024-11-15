@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Таймер обратного отсчёта</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Таймер обратного отсчёта</h1>
+    
+    <!-- Форма для установки даты -->
+    <div class="date-form">
+      <label for="target-date">Установите дату:</label>
+      <input type="datetime-local" id="target-date">
+      <button onclick="startCountdown()">Запустить таймер</button>
+    </div>
+
+    <!-- Область отображения таймера -->
+    <div id="countdown">
+      <div><span id="days">0</span>дней</div>
+      <div><span id="hours">0</span>часов</div>
+      <div><span id="minutes">0</span>минут</div>
+      <div><span id="seconds">0</span>секунд</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
